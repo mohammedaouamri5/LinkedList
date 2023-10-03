@@ -2,7 +2,7 @@
 This code provides a generic linked list implementation. To use it, you first need to define a linked list type using the `___INIT_LIST___` macro:
 
 
-```
+```c
 ___INIT_LIST___(MyLinkedList, int)
 ```
 
@@ -11,14 +11,14 @@ This will create a linked list type called `MyLinkedList` that can store integer
 Once you have defined a linked list type, you can create a new linked list using the `create_##LinkedListType()` function:
 
 
-```
+```c
 MyLinkedList* list = create_MyLinkedList();
 ```
 
 You can then add elements to the linked list using the `push_back_##LinkedListType()` or `push_front_##LinkedListType()` functions:
 
 
-```
+```c
 push_back_MyLinkedList(list, 10);
 push_back_MyLinkedList(list, 20);
 push_back_MyLinkedList(list, 30);
@@ -41,11 +41,11 @@ The following example shows how to use the `Full_Position_Serch_##LinkedListType
 
 **Example usage:**
 
-```
+```c
 #include <stdlib.h>
 #include <stdio.h>
 
-#include "linked_list.h"
+#include "List.h"
 
 int main() {
     // Create a new linked list.
@@ -73,4 +73,4 @@ int main() {
 
     return 0;
 }
-```
+``` 
